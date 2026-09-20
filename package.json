@@ -1,0 +1,15 @@
+{
+  "name": "jev-xhs-emoji-demo",
+  "version": "1.0.0",
+  "private": false,
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "build:sprites": "python3 scripts/build_sprites.py",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "description": "Xiaohongshu-style emoji prediction demo powered by TypeSafe Jev"
+}

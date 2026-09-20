@@ -1,0 +1,650 @@
+{
+  "cell": 64,
+  "pad": 2,
+  "cols": 10,
+  "rows": 7,
+  "sheet": "/sprites/sheet.png",
+  "items": [
+    {
+      "name": "doge",
+      "file": "doge.png",
+      "src": "/xhs-small/doge.png",
+      "x": 2,
+      "y": 2,
+      "w": 64,
+      "h": 64,
+      "criteria": "Doge meme deadpan ironic vibe"
+    },
+    {
+      "name": "买爆",
+      "file": "买爆.png",
+      "src": "/xhs-small/买爆.png",
+      "x": 68,
+      "y": 2,
+      "w": 64,
+      "h": 64,
+      "criteria": "Shopping spree urge, want to buy everything"
+    },
+    {
+      "name": "亲一个",
+      "file": "亲一个.png",
+      "src": "/xhs-small/亲一个.png",
+      "x": 134,
+      "y": 2,
+      "w": 64,
+      "h": 64,
+      "criteria": "Want a kiss affectionate peck"
+    },
+    {
+      "name": "偷笑",
+      "file": "偷笑.png",
+      "src": "/xhs-small/偷笑.png",
+      "x": 200,
+      "y": 2,
+      "w": 64,
+      "h": 64,
+      "criteria": "Secret chuckle, sly quiet laugh"
+    },
+    {
+      "name": "再见",
+      "file": "再见.png",
+      "src": "/xhs-small/再见.png",
+      "x": 266,
+      "y": 2,
+      "w": 64,
+      "h": 64,
+      "criteria": "Saying goodbye see you"
+    },
+    {
+      "name": "冰淇淋",
+      "file": "冰淇淋.png",
+      "src": "/xhs-small/冰淇淋.png",
+      "x": 332,
+      "y": 2,
+      "w": 64,
+      "h": 64,
+      "criteria": "Ice cream treat summer dessert"
+    },
+    {
+      "name": "变猪猪",
+      "file": "变猪猪.png",
+      "src": "/xhs-small/变猪猪.png",
+      "x": 398,
+      "y": 2,
+      "w": 64,
+      "h": 64,
+      "criteria": "Feeling like a pig after overeating"
+    },
+    {
+      "name": "可怜",
+      "file": "可怜.png",
+      "src": "/xhs-small/可怜.png",
+      "x": 464,
+      "y": 2,
+      "w": 64,
+      "h": 64,
+      "criteria": "Pitiful begging for sympathy"
+    },
+    {
+      "name": "叹气",
+      "file": "叹气.png",
+      "src": "/xhs-small/叹气.png",
+      "x": 530,
+      "y": 2,
+      "w": 64,
+      "h": 64,
+      "criteria": "Sighing weary resignation"
+    },
+    {
+      "name": "吃瓜",
+      "file": "吃瓜.png",
+      "src": "/xhs-small/吃瓜.png",
+      "x": 596,
+      "y": 2,
+      "w": 64,
+      "h": 64,
+      "criteria": "Watching drama as bystander gossip spectator"
+    },
+    {
+      "name": "吃粽子",
+      "file": "吃粽子.png",
+      "src": "/xhs-small/吃粽子.png",
+      "x": 2,
+      "y": 68,
+      "w": 64,
+      "h": 64,
+      "criteria": "Eating zongzi festival food"
+    },
+    {
+      "name": "吐舌头",
+      "file": "吐舌头.png",
+      "src": "/xhs-small/吐舌头.png",
+      "x": 68,
+      "y": 68,
+      "w": 64,
+      "h": 64,
+      "criteria": "Tongue out playful tease"
+    },
+    {
+      "name": "吧唧",
+      "file": "吧唧.png",
+      "src": "/xhs-small/吧唧.png",
+      "x": 134,
+      "y": 68,
+      "w": 64,
+      "h": 64,
+      "criteria": "Munching eating with relish cute"
+    },
+    {
+      "name": "呃",
+      "file": "呃.png",
+      "src": "/xhs-small/呃.png",
+      "x": 200,
+      "y": 68,
+      "w": 64,
+      "h": 64,
+      "criteria": "Awkward uh speechless pause"
+    },
+    {
+      "name": "哇",
+      "file": "哇.png",
+      "src": "/xhs-small/哇.png",
+      "x": 266,
+      "y": 68,
+      "w": 64,
+      "h": 64,
+      "criteria": "Amazed wow, impressed surprise"
+    },
+    {
+      "name": "哭惹",
+      "file": "哭惹.png",
+      "src": "/xhs-small/哭惹.png",
+      "x": 332,
+      "y": 68,
+      "w": 64,
+      "h": 64,
+      "criteria": "Cute crying, soft tearful sadness"
+    },
+    {
+      "name": "喝奶茶",
+      "file": "喝奶茶.png",
+      "src": "/xhs-small/喝奶茶.png",
+      "x": 398,
+      "y": 68,
+      "w": 64,
+      "h": 64,
+      "criteria": "Drinking milk tea, cafe treat vibe"
+    },
+    {
+      "name": "嘻嘻",
+      "file": "嘻嘻.png",
+      "src": "/xhs-small/嘻嘻.png",
+      "x": 464,
+      "y": 68,
+      "w": 64,
+      "h": 64,
+      "criteria": "Hehe giggle playful laugh"
+    },
+    {
+      "name": "坏笑",
+      "file": "坏笑.png",
+      "src": "/xhs-small/坏笑.png",
+      "x": 530,
+      "y": 68,
+      "w": 64,
+      "h": 64,
+      "criteria": "Mischievous grin scheming smile"
+    },
+    {
+      "name": "大笑",
+      "file": "大笑.png",
+      "src": "/xhs-small/大笑.png",
+      "x": 596,
+      "y": 68,
+      "w": 64,
+      "h": 64,
+      "criteria": "Big loud laugh, high amusement"
+    },
+    {
+      "name": "失望",
+      "file": "失望.png",
+      "src": "/xhs-small/失望.png",
+      "x": 2,
+      "y": 134,
+      "w": 64,
+      "h": 64,
+      "criteria": "Disappointed, let down, mild sadness"
+    },
+    {
+      "name": "完啦",
+      "file": "完啦.png",
+      "src": "/xhs-small/完啦.png",
+      "x": 68,
+      "y": 134,
+      "w": 64,
+      "h": 64,
+      "criteria": "Oh no we are done for doomed playfully"
+    },
+    {
+      "name": "害羞",
+      "file": "害羞.png",
+      "src": "/xhs-small/害羞.png",
+      "x": 134,
+      "y": 134,
+      "w": 64,
+      "h": 64,
+      "criteria": "Shy, bashful, blushing cute embarrassment"
+    },
+    {
+      "name": "尬住",
+      "file": "尬住.png",
+      "src": "/xhs-small/尬住.png",
+      "x": 200,
+      "y": 134,
+      "w": 64,
+      "h": 64,
+      "criteria": "Frozen awkward socially stuck"
+    },
+    {
+      "name": "得意",
+      "file": "得意.png",
+      "src": "/xhs-small/得意.png",
+      "x": 266,
+      "y": 134,
+      "w": 64,
+      "h": 64,
+      "criteria": "Smug proud pleased with oneself"
+    },
+    {
+      "name": "微笑",
+      "file": "微笑.png",
+      "src": "/xhs-small/微笑.png",
+      "x": 332,
+      "y": 134,
+      "w": 64,
+      "h": 64,
+      "criteria": "Polite mild smile, everyday friendly warmth"
+    },
+    {
+      "name": "心心眼",
+      "file": "心心眼.png",
+      "src": "/xhs-small/心心眼.png",
+      "x": 398,
+      "y": 134,
+      "w": 64,
+      "h": 64,
+      "criteria": "Heart eyes loving something a lot"
+    },
+    {
+      "name": "惊恐",
+      "file": "惊恐.png",
+      "src": "/xhs-small/惊恐.png",
+      "x": 464,
+      "y": 134,
+      "w": 64,
+      "h": 64,
+      "criteria": "Scared startled fear"
+    },
+    {
+      "name": "扯脸",
+      "file": "扯脸.png",
+      "src": "/xhs-small/扯脸.png",
+      "x": 530,
+      "y": 134,
+      "w": 64,
+      "h": 64,
+      "criteria": "Pulling face awkward stretch"
+    },
+    {
+      "name": "扶墙",
+      "file": "扶墙.png",
+      "src": "/xhs-small/扶墙.png",
+      "x": 596,
+      "y": 134,
+      "w": 64,
+      "h": 64,
+      "criteria": "Need to lean on wall overwhelmed dizzy"
+    },
+    {
+      "name": "扶额",
+      "file": "扶额.png",
+      "src": "/xhs-small/扶额.png",
+      "x": 2,
+      "y": 200,
+      "w": 64,
+      "h": 64,
+      "criteria": "Hand on forehead frustrated sigh"
+    },
+    {
+      "name": "抓狂",
+      "file": "抓狂.png",
+      "src": "/xhs-small/抓狂.png",
+      "x": 68,
+      "y": 200,
+      "w": 64,
+      "h": 64,
+      "criteria": "Freaking out overwhelmed panic"
+    },
+    {
+      "name": "抠鼻",
+      "file": "抠鼻.png",
+      "src": "/xhs-small/抠鼻.png",
+      "x": 134,
+      "y": 200,
+      "w": 64,
+      "h": 64,
+      "criteria": "Picking nose idle awkward carelessness"
+    },
+    {
+      "name": "抽泣",
+      "file": "抽泣.png",
+      "src": "/xhs-small/抽泣.png",
+      "x": 200,
+      "y": 200,
+      "w": 64,
+      "h": 64,
+      "criteria": "Light sobbing sniffle cry"
+    },
+    {
+      "name": "拔草",
+      "file": "拔草.png",
+      "src": "/xhs-small/拔草.png",
+      "x": 266,
+      "y": 200,
+      "w": 64,
+      "h": 64,
+      "criteria": "Giving up wanting a product un-wishlist"
+    },
+    {
+      "name": "捂嘴笑",
+      "file": "捂嘴笑.png",
+      "src": "/xhs-small/捂嘴笑.png",
+      "x": 332,
+      "y": 200,
+      "w": 64,
+      "h": 64,
+      "criteria": "Laughing while covering mouth"
+    },
+    {
+      "name": "捂脸",
+      "file": "捂脸.png",
+      "src": "/xhs-small/捂脸.png",
+      "x": 398,
+      "y": 200,
+      "w": 64,
+      "h": 64,
+      "criteria": "Facepalm cover face embarrassment"
+    },
+    {
+      "name": "斜眼",
+      "file": "斜眼.png",
+      "src": "/xhs-small/斜眼.png",
+      "x": 464,
+      "y": 200,
+      "w": 64,
+      "h": 64,
+      "criteria": "Side-eye skeptical glance"
+    },
+    {
+      "name": "暗中观察",
+      "file": "暗中观察.png",
+      "src": "/xhs-small/暗中观察.png",
+      "x": 530,
+      "y": 200,
+      "w": 64,
+      "h": 64,
+      "criteria": "Quietly watching, lurking, observing"
+    },
+    {
+      "name": "棒",
+      "file": "棒.png",
+      "src": "/xhs-small/棒.png",
+      "x": 596,
+      "y": 200,
+      "w": 64,
+      "h": 64,
+      "criteria": "Great job awesome solid"
+    },
+    {
+      "name": "棒棒糖",
+      "file": "棒棒糖.png",
+      "src": "/xhs-small/棒棒糖.png",
+      "x": 2,
+      "y": 266,
+      "w": 64,
+      "h": 64,
+      "criteria": "Lollipop cute sweet vibe"
+    },
+    {
+      "name": "汗颜",
+      "file": "汗颜.png",
+      "src": "/xhs-small/汗颜.png",
+      "x": 68,
+      "y": 266,
+      "w": 64,
+      "h": 64,
+      "criteria": "Awkward sweat drop, embarrassed speechless"
+    },
+    {
+      "name": "泪崩",
+      "file": "泪崩.png",
+      "src": "/xhs-small/泪崩.png",
+      "x": 134,
+      "y": 266,
+      "w": 64,
+      "h": 64,
+      "criteria": "Burst into tears emotional collapse"
+    },
+    {
+      "name": "派对",
+      "file": "派对.png",
+      "src": "/xhs-small/派对.png",
+      "x": 200,
+      "y": 266,
+      "w": 64,
+      "h": 64,
+      "criteria": "Party celebration festive mood"
+    },
+    {
+      "name": "火",
+      "file": "火.png",
+      "src": "/xhs-small/火.png",
+      "x": 266,
+      "y": 266,
+      "w": 64,
+      "h": 64,
+      "criteria": "Fire, hot, trending, hype energy"
+    },
+    {
+      "name": "火箭",
+      "file": "火箭.png",
+      "src": "/xhs-small/火箭.png",
+      "x": 332,
+      "y": 266,
+      "w": 64,
+      "h": 64,
+      "criteria": "Rocket launch, takeoff energy, rapid growth"
+    },
+    {
+      "name": "生气",
+      "file": "生气.png",
+      "src": "/xhs-small/生气.png",
+      "x": 398,
+      "y": 266,
+      "w": 64,
+      "h": 64,
+      "criteria": "Angry, annoyed, mad"
+    },
+    {
+      "name": "皱眉",
+      "file": "皱眉.png",
+      "src": "/xhs-small/皱眉.png",
+      "x": 464,
+      "y": 266,
+      "w": 64,
+      "h": 64,
+      "criteria": "Frowning confused concern"
+    },
+    {
+      "name": "睡觉",
+      "file": "睡觉.png",
+      "src": "/xhs-small/睡觉.png",
+      "x": 530,
+      "y": 266,
+      "w": 64,
+      "h": 64,
+      "criteria": "Sleepy going to bed exhausted"
+    },
+    {
+      "name": "石化",
+      "file": "石化.png",
+      "src": "/xhs-small/石化.png",
+      "x": 596,
+      "y": 266,
+      "w": 64,
+      "h": 64,
+      "criteria": "Frozen in shock, stunned speechless"
+    },
+    {
+      "name": "种草",
+      "file": "种草.png",
+      "src": "/xhs-small/种草.png",
+      "x": 2,
+      "y": 332,
+      "w": 64,
+      "h": 64,
+      "criteria": "Getting product interest wishlist urge"
+    },
+    {
+      "name": "笑哭",
+      "file": "笑哭.png",
+      "src": "/xhs-small/笑哭.png",
+      "x": 68,
+      "y": 332,
+      "w": 64,
+      "h": 64,
+      "criteria": "Laugh-cry, funny but painful wry amusement"
+    },
+    {
+      "name": "笑哭了",
+      "file": "笑哭了.png",
+      "src": "/xhs-small/笑哭了.png",
+      "x": 134,
+      "y": 332,
+      "w": 64,
+      "h": 64,
+      "criteria": "Laugh until cry hilarious"
+    },
+    {
+      "name": "自拍",
+      "file": "自拍.png",
+      "src": "/xhs-small/自拍.png",
+      "x": 200,
+      "y": 332,
+      "w": 64,
+      "h": 64,
+      "criteria": "Taking a selfie, posing for camera"
+    },
+    {
+      "name": "色色",
+      "file": "色色.png",
+      "src": "/xhs-small/色色.png",
+      "x": 266,
+      "y": 332,
+      "w": 64,
+      "h": 64,
+      "criteria": "Flirty thirsty admiring beauty playfully"
+    },
+    {
+      "name": "萌萌哒",
+      "file": "萌萌哒.png",
+      "src": "/xhs-small/萌萌哒.png",
+      "x": 332,
+      "y": 332,
+      "w": 64,
+      "h": 64,
+      "criteria": "Extra cute adorable soft kawaii"
+    },
+    {
+      "name": "赞",
+      "file": "赞.png",
+      "src": "/xhs-small/赞.png",
+      "x": 398,
+      "y": 332,
+      "w": 64,
+      "h": 64,
+      "criteria": "Thumbs-up approve, praise, support"
+    },
+    {
+      "name": "超喜欢",
+      "file": "超喜欢.png",
+      "src": "/xhs-small/超喜欢.png",
+      "x": 464,
+      "y": 332,
+      "w": 64,
+      "h": 64,
+      "criteria": "Really really like love this"
+    },
+    {
+      "name": "蹲后续",
+      "file": "蹲后续.png",
+      "src": "/xhs-small/蹲后续.png",
+      "x": 530,
+      "y": 332,
+      "w": 64,
+      "h": 64,
+      "criteria": "Waiting for the sequel / next update"
+    },
+    {
+      "name": "鄙视",
+      "file": "鄙视.png",
+      "src": "/xhs-small/鄙视.png",
+      "x": 596,
+      "y": 332,
+      "w": 64,
+      "h": 64,
+      "criteria": "Disdain looking down on"
+    },
+    {
+      "name": "飞吻",
+      "file": "飞吻.png",
+      "src": "/xhs-small/飞吻.png",
+      "x": 2,
+      "y": 398,
+      "w": 64,
+      "h": 64,
+      "criteria": "Blowing a kiss, flirty goodbye"
+    },
+    {
+      "name": "飞机",
+      "file": "飞机.png",
+      "src": "/xhs-small/飞机.png",
+      "x": 68,
+      "y": 398,
+      "w": 64,
+      "h": 64,
+      "criteria": "Airplane travel, flying, boarding a flight, airport trip"
+    },
+    {
+      "name": "黄金薯",
+      "file": "黄金薯.png",
+      "src": "/xhs-small/黄金薯.png",
+      "x": 134,
+      "y": 398,
+      "w": 64,
+      "h": 64,
+      "criteria": "Golden potato pride show-off cute"
+    },
+    {
+      "name": "黑薯问号",
+      "file": "黑薯问号.png",
+      "src": "/xhs-small/黑薯问号.png",
+      "x": 200,
+      "y": 398,
+      "w": 64,
+      "h": 64,
+      "criteria": "Confused question marks huh"
+    }
+  ],
+  "sheetWebp": "/sprites/sheet.webp"
+}

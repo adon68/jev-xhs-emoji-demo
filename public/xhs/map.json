@@ -1,0 +1,311 @@
+{
+  "pack": "小红书",
+  "source": "Augenstern-O/Stickers (CC BY 4.0)",
+  "items": [
+    {
+      "name": "微笑",
+      "file": "微笑.png",
+      "src": "/xhs/%E5%BE%AE%E7%AC%91.png"
+    },
+    {
+      "name": "害羞",
+      "file": "害羞.png",
+      "src": "/xhs/%E5%AE%B3%E7%BE%9E.png"
+    },
+    {
+      "name": "失望",
+      "file": "失望.png",
+      "src": "/xhs/%E5%A4%B1%E6%9C%9B.png"
+    },
+    {
+      "name": "汗颜",
+      "file": "汗颜.png",
+      "src": "/xhs/%E6%B1%97%E9%A2%9C.png"
+    },
+    {
+      "name": "哇",
+      "file": "哇.png",
+      "src": "/xhs/%E5%93%87.png"
+    },
+    {
+      "name": "喝奶茶",
+      "file": "喝奶茶.png",
+      "src": "/xhs/%E5%96%9D%E5%A5%B6%E8%8C%B6.png"
+    },
+    {
+      "name": "自拍",
+      "file": "自拍.png",
+      "src": "/xhs/%E8%87%AA%E6%8B%8D.png"
+    },
+    {
+      "name": "偷笑",
+      "file": "偷笑.png",
+      "src": "/xhs/%E5%81%B7%E7%AC%91.png"
+    },
+    {
+      "name": "飞吻",
+      "file": "飞吻.png",
+      "src": "/xhs/%E9%A3%9E%E5%90%BB.png"
+    },
+    {
+      "name": "石化",
+      "file": "石化.png",
+      "src": "/xhs/%E7%9F%B3%E5%8C%96.png"
+    },
+    {
+      "name": "笑哭",
+      "file": "笑哭.png",
+      "src": "/xhs/%E7%AC%91%E5%93%AD.png"
+    },
+    {
+      "name": "赞",
+      "file": "赞.png",
+      "src": "/xhs/%E8%B5%9E.png"
+    },
+    {
+      "name": "蹲后续",
+      "file": "蹲后续.png",
+      "src": "/xhs/%E8%B9%B2%E5%90%8E%E7%BB%AD.png"
+    },
+    {
+      "name": "暗中观察",
+      "file": "暗中观察.png",
+      "src": "/xhs/%E6%9A%97%E4%B8%AD%E8%A7%82%E5%AF%9F.png"
+    },
+    {
+      "name": "买爆",
+      "file": "买爆.png",
+      "src": "/xhs/%E4%B9%B0%E7%88%86.png"
+    },
+    {
+      "name": "大笑",
+      "file": "大笑.png",
+      "src": "/xhs/%E5%A4%A7%E7%AC%91.png"
+    },
+    {
+      "name": "色色",
+      "file": "色色.png",
+      "src": "/xhs/%E8%89%B2%E8%89%B2.png"
+    },
+    {
+      "name": "生气",
+      "file": "生气.png",
+      "src": "/xhs/%E7%94%9F%E6%B0%94.png"
+    },
+    {
+      "name": "哭惹",
+      "file": "哭惹.png",
+      "src": "/xhs/%E5%93%AD%E6%83%B9.png"
+    },
+    {
+      "name": "萌萌哒",
+      "file": "萌萌哒.png",
+      "src": "/xhs/%E8%90%8C%E8%90%8C%E5%93%92.png"
+    },
+    {
+      "name": "斜眼",
+      "file": "斜眼.png",
+      "src": "/xhs/%E6%96%9C%E7%9C%BC.png"
+    },
+    {
+      "name": "可怜",
+      "file": "可怜.png",
+      "src": "/xhs/%E5%8F%AF%E6%80%9C.png"
+    },
+    {
+      "name": "鄙视",
+      "file": "鄙视.png",
+      "src": "/xhs/%E9%84%99%E8%A7%86.png"
+    },
+    {
+      "name": "皱眉",
+      "file": "皱眉.png",
+      "src": "/xhs/%E7%9A%B1%E7%9C%89.png"
+    },
+    {
+      "name": "抓狂",
+      "file": "抓狂.png",
+      "src": "/xhs/%E6%8A%93%E7%8B%82.png"
+    },
+    {
+      "name": "捂脸",
+      "file": "捂脸.png",
+      "src": "/xhs/%E6%8D%82%E8%84%B8.png"
+    },
+    {
+      "name": "派对",
+      "file": "派对.png",
+      "src": "/xhs/%E6%B4%BE%E5%AF%B9.png"
+    },
+    {
+      "name": "吧唧",
+      "file": "吧唧.png",
+      "src": "/xhs/%E5%90%A7%E5%94%A7.png"
+    },
+    {
+      "name": "惊恐",
+      "file": "惊恐.png",
+      "src": "/xhs/%E6%83%8A%E6%81%90.png"
+    },
+    {
+      "name": "抠鼻",
+      "file": "抠鼻.png",
+      "src": "/xhs/%E6%8A%A0%E9%BC%BB.png"
+    },
+    {
+      "name": "再见",
+      "file": "再见.png",
+      "src": "/xhs/%E5%86%8D%E8%A7%81.png"
+    },
+    {
+      "name": "叹气",
+      "file": "叹气.png",
+      "src": "/xhs/%E5%8F%B9%E6%B0%94.png"
+    },
+    {
+      "name": "睡觉",
+      "file": "睡觉.png",
+      "src": "/xhs/%E7%9D%A1%E8%A7%89.png"
+    },
+    {
+      "name": "得意",
+      "file": "得意.png",
+      "src": "/xhs/%E5%BE%97%E6%84%8F.png"
+    },
+    {
+      "name": "吃瓜",
+      "file": "吃瓜.png",
+      "src": "/xhs/%E5%90%83%E7%93%9C.png"
+    },
+    {
+      "name": "扶墙",
+      "file": "扶墙.png",
+      "src": "/xhs/%E6%89%B6%E5%A2%99.png"
+    },
+    {
+      "name": "黑薯问号",
+      "file": "黑薯问号.png",
+      "src": "/xhs/%E9%BB%91%E8%96%AF%E9%97%AE%E5%8F%B7.png"
+    },
+    {
+      "name": "黄金薯",
+      "file": "黄金薯.png",
+      "src": "/xhs/%E9%BB%84%E9%87%91%E8%96%AF.png"
+    },
+    {
+      "name": "吐舌头",
+      "file": "吐舌头.png",
+      "src": "/xhs/%E5%90%90%E8%88%8C%E5%A4%B4.png"
+    },
+    {
+      "name": "扯脸",
+      "file": "扯脸.png",
+      "src": "/xhs/%E6%89%AF%E8%84%B8.png"
+    },
+    {
+      "name": "doge",
+      "file": "doge.png",
+      "src": "/xhs/doge.png"
+    },
+    {
+      "name": "笑哭了",
+      "file": "笑哭了.png",
+      "src": "/xhs/%E7%AC%91%E5%93%AD%E4%BA%86.png"
+    },
+    {
+      "name": "棒",
+      "file": "棒.png",
+      "src": "/xhs/%E6%A3%92.png"
+    },
+    {
+      "name": "亲一个",
+      "file": "亲一个.png",
+      "src": "/xhs/%E4%BA%B2%E4%B8%80%E4%B8%AA.png"
+    },
+    {
+      "name": "完啦",
+      "file": "完啦.png",
+      "src": "/xhs/%E5%AE%8C%E5%95%A6.png"
+    },
+    {
+      "name": "心心眼",
+      "file": "心心眼.png",
+      "src": "/xhs/%E5%BF%83%E5%BF%83%E7%9C%BC.png"
+    },
+    {
+      "name": "扶额",
+      "file": "扶额.png",
+      "src": "/xhs/%E6%89%B6%E9%A2%9D.png"
+    },
+    {
+      "name": "抽泣",
+      "file": "抽泣.png",
+      "src": "/xhs/%E6%8A%BD%E6%B3%A3.png"
+    },
+    {
+      "name": "呃",
+      "file": "呃.png",
+      "src": "/xhs/%E5%91%83.png"
+    },
+    {
+      "name": "嘻嘻",
+      "file": "嘻嘻.png",
+      "src": "/xhs/%E5%98%BB%E5%98%BB.png"
+    },
+    {
+      "name": "捂嘴笑",
+      "file": "捂嘴笑.png",
+      "src": "/xhs/%E6%8D%82%E5%98%B4%E7%AC%91.png"
+    },
+    {
+      "name": "超喜欢",
+      "file": "超喜欢.png",
+      "src": "/xhs/%E8%B6%85%E5%96%9C%E6%AC%A2.png"
+    },
+    {
+      "name": "泪崩",
+      "file": "泪崩.png",
+      "src": "/xhs/%E6%B3%AA%E5%B4%A9.png"
+    },
+    {
+      "name": "尬住",
+      "file": "尬住.png",
+      "src": "/xhs/%E5%B0%AC%E4%BD%8F.png"
+    },
+    {
+      "name": "坏笑",
+      "file": "坏笑.png",
+      "src": "/xhs/%E5%9D%8F%E7%AC%91.png"
+    },
+    {
+      "name": "种草",
+      "file": "种草.png",
+      "src": "/xhs/%E7%A7%8D%E8%8D%89.png"
+    },
+    {
+      "name": "拔草",
+      "file": "拔草.png",
+      "src": "/xhs/%E6%8B%94%E8%8D%89.png"
+    },
+    {
+      "name": "变猪猪",
+      "file": "变猪猪.png",
+      "src": "/xhs/%E5%8F%98%E7%8C%AA%E7%8C%AA.png"
+    },
+    {
+      "name": "冰淇淋",
+      "file": "冰淇淋.png",
+      "src": "/xhs/%E5%86%B0%E6%B7%87%E6%B7%8B.png"
+    },
+    {
+      "name": "吃粽子",
+      "file": "吃粽子.png",
+      "src": "/xhs/%E5%90%83%E7%B2%BD%E5%AD%90.png"
+    },
+    {
+      "name": "棒棒糖",
+      "file": "棒棒糖.png",
+      "src": "/xhs/%E6%A3%92%E6%A3%92%E7%B3%96.png"
+    }
+  ]
+}
