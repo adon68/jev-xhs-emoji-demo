@@ -1,0 +1,19 @@
+# 排除大型原始图片文件（运行时不需要）
+public/xhs/
+
+# 开发环境
+.venv/
+node_modules/
+.env
+.env.*
+
+# 日志和临时文件
+*.log
+_*.txt
+
+# 本地资源
+assets/
+
+# Git 和系统文件
+.git/
+.DS_Store
