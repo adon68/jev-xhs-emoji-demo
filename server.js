@@ -94,11 +94,15 @@ const EMOJI_CRITERIA = {
 app.use(express.json({ limit: '64kb' }));
 app.use(express.static(path.join(__dirname, 'public')));
 
-async function getApiKey() {
-  if (process.env.TYPESAFE_API_KEY) return process.env.TYPESAFE_API_KEY;
-  if (process.env.JEV_API_KEY) return process.env.JEV_API_KEY;
+async function getApiKey(requestKey) {
+  if (requestKey && typeof requestKey === 'string' && requestKey.trim()) {
+    return requestKey.trim();
+  }
   if (memoryKey) return memoryKey;
-  if (!existsSync(KEY_FILE)) return null;
+  if (!process.env.VERCEL && !existsSync(KEY_FILE)) return null;
+  if (process.env.VERCEL) {
+    return null;
+  }
   try {
     const v = (await readFile(KEY_FILE, 'utf8')).trim();
     if (v) memoryKey = v;
@@ -115,7 +119,7 @@ app.get('/api/health', (_req, res) => {
 
 app.get('/api/key-status', async (_req, res) => {
   try {
-    res.json({ configured: !!(await getApiKey()) });
+    res.json({ configured: false });
   } catch (err) {
     res.status(500).json({ error: 'status failed' });
   }
@@ -128,13 +132,17 @@ app.post('/api/save-key', async (req, res) => {
       return res.status(400).json({ error: 'Invalid API key' });
     }
     memoryKey = apiKey.trim();
-    try {
-      await mkdir(KEY_DIR, { recursive: true });
-      await writeFile(KEY_FILE, memoryKey, { encoding: 'utf8', mode: 0o600 });
-    } catch (err) {
-      console.error('persist key failed (kept in memory)', err.message);
+    let persisted = false;
+    if (!process.env.VERCEL) {
+      try {
+        await mkdir(KEY_DIR, { recursive: true });
+        await writeFile(KEY_FILE, memoryKey, { encoding: 'utf8', mode: 0o600 });
+        persisted = existsSync(KEY_FILE);
+      } catch (err) {
+        console.error('persist key failed (kept in memory)', err.message);
+      }
     }
-    res.json({ success: true, persisted: existsSync(KEY_FILE) });
+    res.json({ success: true, persisted, message: 'Key saved for this session' });
   } catch (err) {
     console.error('save-key', err.message);
     res.status(500).json({ error: 'Failed to save API key' });
@@ -144,11 +152,13 @@ app.post('/api/save-key', async (req, res) => {
 app.post('/api/suggest-emoji', async (req, res) => {
   const text = req.body?.text;
   const requestId = req.body?.requestId;
+  const requestKey = req.body?.apiKey || req.headers.authorization?.replace(/^Bearer\s+/i, '');
+  
   if (!text || typeof text !== 'string') {
     return res.status(400).json({ error: 'Text is required' });
   }
 
-  const apiKey = await getApiKey();
+  const apiKey = await getApiKey(requestKey);
   if (!apiKey) {
     return res.status(401).json({ error: 'API key not configured' });
   }

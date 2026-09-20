@@ -61,26 +61,28 @@
 
 ```bash
 npm install
-export TYPESAFE_API_KEY=你的_key   # 或在页面里粘贴保存
 npm start
 # http://127.0.0.1:8787
 ```
+
+首次访问时，在页面顶部粘贴你的 TypeSafe API Key。Key 会保存在浏览器的 localStorage 中，仅供当前浏览器使用，不会上传到服务器。
 
 也可双击 `run-demo.command`（保持 Terminal 窗口不要关）。
 
 ## Vercel 部署
 
 1. 用本仓库 Import 到 [Vercel](https://vercel.com)  
-2. Environment Variable 增加：`TYPESAFE_API_KEY`  
+2. **无需**配置 Environment Variable（每个访客输入自己的 Key）
 3. Deploy  
 
 CLI：
 
 ```bash
 npx vercel login
-npx vercel env add TYPESAFE_API_KEY
 npx vercel --prod
 ```
+
+**重要**: 生产环境不再使用共享的服务器 API Key。每个访客需要在页面上粘贴自己的 TypeSafe API Key，Key 保存在浏览器本地，确保隐私安全。
 
 `api/index.js` 导出 Express `server.js`；静态资源在 `public/`。
 

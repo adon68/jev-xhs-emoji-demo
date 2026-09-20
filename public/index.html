@@ -54,7 +54,7 @@ details.debug summary{cursor:pointer;text-align:center;list-style:none}
     <button class="next" id="nextBtn" type="button">下一步</button>
   </div>
   <div class="keybox" id="keybox">
-    <div>TypeSafe API Key 只保存在本机</div>
+    <div>TypeSafe API Key 只保存在本浏览器，不会上传到服务器</div>
     <div class="keyrow">
       <input id="apiKey" type="password" placeholder="粘贴 API Key" autocomplete="off" />
       <button id="saveKey" type="button">保存</button>
@@ -103,11 +103,12 @@ const choiceToSticker = {
   '🥰':'超喜欢','😍':'心心眼','😘':'飞吻','💋':'亲一个','🫶':'赞','💕':'超喜欢','💗':'心心眼',
   '💖':'超喜欢','💘':'心心眼','❤️‍🔥':'超喜欢','✨':'哇','🌟':'棒','💫':'哇','🎀':'萌萌哒','💅':'得意',
   '💄':'自拍','🛍️':'买爆','📸':'自拍','📷':'自拍','🎬':'自拍','📱':'暗中观察','💬':'蹲后续','👀':'暗中观察',
-  '🙋':'赞','🙌':'赞','👏':'棒','🤝':'赞','💯':'棒','🔥':'哇','🎉':'派对','🥳':'派对','💪':'棒',
+  '🙋':'赞','🙌':'赞','👏':'棒','🤝':'赞','💯':'棒','🔥':'火','🎉':'派对','🥳':'派对','💪':'棒',
   '🤑':'买爆','💸':'买爆','🧧':'黄金薯','🧋':'喝奶茶','☕':'喝奶茶','🍰':'吧唧','🍓':'吧唧','🍑':'吧唧',
   '🌶️':'吧唧','🍜':'吧唧','🍣':'吧唧','🍕':'吧唧','🥗':'吧唧','🍳':'吧唧','☀️':'微笑','☁️':'叹气',
   '❤️':'心心眼','😊':'微笑','😄':'大笑','😁':'嘻嘻','😉':'坏笑','😌':'微笑','😋':'吧唧','🤗':'超喜欢',
-  '🤔':'黑薯问号','😑':'呃','😔':'失望','😢':'哭惹','😩':'完啦','😡':'生气','👍':'赞','💤':'睡觉'
+  '🤔':'黑薯问号','😑':'呃','😔':'失望','😢':'哭惹','😩':'完啦','😡':'生气','👍':'赞','💤':'睡觉',
+  '🚀':'火箭','✈️':'飞机','🛫':'飞机','🛬':'飞机'
 };
 
 function setStatus(text, mode) {
@@ -124,22 +125,26 @@ function syncEmptyUI() {
 }
 async function refreshKey() {
   try {
-    const d = await fetch('/api/key-status').then(r => r.json());
-    keybox.classList.toggle('hidden', !!d.configured);
-    if (d.configured) setStatus('Key 已保存', 'ok');
+    const stored = localStorage.getItem('typesafe_api_key');
+    keybox.classList.toggle('hidden', !!stored);
+    if (stored) {
+      setStatus('Key 已保存在本浏览器', 'ok');
+    }
   } catch (e) {
-    setStatus('连不上本地服务', 'warn');
+    setStatus('无法访问 localStorage', 'warn');
   }
 }
 document.getElementById('saveKey').onclick = async () => {
   const apiKey = document.getElementById('apiKey').value.trim();
   if (apiKey.length < 8) return setStatus('Key 太短', 'warn');
-  const r = await fetch('/api/save-key', {
-    method: 'POST', headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ apiKey })
-  });
-  if (r.ok) { setStatus('Key 已保存', 'ok'); refreshKey(); }
-  else setStatus('Key 保存失败', 'warn');
+  try {
+    localStorage.setItem('typesafe_api_key', apiKey);
+    document.getElementById('apiKey').value = '';
+    setStatus('Key 已保存在本浏览器', 'ok');
+    refreshKey();
+  } catch (e) {
+    setStatus('Key 保存失败：' + e.message, 'warn');
+  }
 };
 async function loadStickers() {
   const [d, atlas] = await Promise.all([
@@ -305,6 +310,12 @@ async function runSuggest() {
     setStatus('这句还不完整，先不插');
     return;
   }
+  const apiKey = localStorage.getItem('typesafe_api_key');
+  if (!apiKey) {
+    setStatus('请先填写 API Key', 'warn');
+    keybox.classList.remove('hidden');
+    return;
+  }
   const id = String(++seq);
   const bare = p.bare;
   const marker = putMarker(id, p.range);
@@ -317,7 +328,7 @@ async function runSuggest() {
     const r = await fetch('/api/suggest-emoji', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ text: bare, requestId: id })
+      body: JSON.stringify({ text: bare, requestId: id, apiKey })
     });
     const d = await r.json();
     const clientMs = Math.round(performance.now() - t0);
