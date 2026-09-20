@@ -1,0 +1,8 @@
+public/xhs/
+.venv/
+node_modules/
+.git/
+*.log
+_*.txt
+.DS_Store
+assets/
